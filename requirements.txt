@@ -1,3 +1,4 @@
 streamlit
 pandas
 shap
+scikit-learn
