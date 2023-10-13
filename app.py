@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
-import joblib
+import pickle
 from shap import Explainer, Explanation
 import shap
 
@@ -103,7 +103,7 @@ df = pd.DataFrame.from_dict(features_dict)
 
 button = st.button("Submit")
 
-loaded_rf_model = joblib.load('model/random_forest_model.joblib', protocol=4)
+loaded_rf_model = pickle.load(open('model/random_forest_model.pkl', 'rb'))
 
 if button:
     predictions = loaded_rf_model.predict(df)
