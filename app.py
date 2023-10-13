@@ -103,7 +103,7 @@ df = pd.DataFrame.from_dict(features_dict)
 
 button = st.button("Submit")
 
-loaded_rf_model = joblib.load('model/random_forest_model.joblib')
+loaded_rf_model = joblib.load('model/random_forest_model.joblib', protocol=4)
 
 if button:
     predictions = loaded_rf_model.predict(df)
