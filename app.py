@@ -103,7 +103,7 @@ df = pd.DataFrame.from_dict(features_dict)
 
 button = st.button("Submit")
 
-loaded_rf_model = pickle.load(open('model/random_forest_model.pkl', 'rb'))
+loaded_rf_model = pickle.load(open('model/random_forest_model', 'rb'))
 
 if button:
     predictions = loaded_rf_model.predict(df)
