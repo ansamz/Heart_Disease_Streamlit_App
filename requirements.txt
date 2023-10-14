@@ -2,3 +2,4 @@ streamlit
 pandas
 shap
 scikit-learn==1.2.2
+matplotlib
