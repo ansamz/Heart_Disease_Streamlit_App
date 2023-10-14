@@ -1,6 +1,8 @@
 import streamlit as st
 import streamlit.components.v1 as components
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import tree
 import pandas as pd
 import pickle
 from shap import Explainer, Explanation
