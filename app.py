@@ -133,7 +133,7 @@ if button:
                  'max_heart_rate': ['feature 7'], 'exercise_angina': ['feature 8'], 
                  'oldpeak': ['feature 9'], 'ST_slope': ['feature 10']}
 
-    st.write('Below are the highest rist factors that lead to this prediction')
+    st.write('Below are the highest risk factors that lead to this prediction')
     features = pd.DataFrame.from_dict(features_map)
     st.table(features)
     st.pyplot(shap.plots.waterfall(shap_exp[idx]))
