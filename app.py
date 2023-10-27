@@ -90,7 +90,7 @@ if exercise_angina == 'Yes':
 else:
     exercise_angina = 0
 
-oldpeak = st.slider("ST depression induced by exercise: ", min_value=-3, max_value=7, value=0)
+oldpeak = st.number_input("ST depression induced by exercise: ", min_value=-3, max_value=7, value=0)
 ST_slope = st.selectbox("ST Slope: ", ('upsloping', 
                                        'flat',
                                        'downsloping'))
