@@ -83,7 +83,7 @@ else:
 resting_ecg = st.selectbox("Resting Electrocardiogram Results: ", ('normal', 
                                                                    'ST-T wave abnormality T wave inversions and/or ST elevation or depression of > 0.05 mV',
                                                                    'left ventricular hypertrophy'))
-max_heart_rate = st.slider("Maximum Heart Rate", min_value=60, max_value=220, value=60)
+max_heart_rate = st.number_input("Maximum Heart Rate", min_value=60, max_value=220, value=60)
 exercise_angina = st.radio("Does the patient have exercise angina? ", ('Yes', 'No'), horizontal=True)
 if exercise_angina == 'Yes':
     exercise_angina = 1
